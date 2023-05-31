@@ -10,6 +10,7 @@ const reviewExists = async (req, res, next) => {
   next({ status: 404, message: "Review cannot be found." });
 };
 
+
 const update = async (req, res, next) => {
   const review = res.locals.review.review_id;
   const updatedReview = {
